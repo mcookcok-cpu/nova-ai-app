@@ -1,0 +1,13 @@
+{
+  "gaps": [
+    {
+      "id": "msp7k1vi0nu1",
+      "area": "Self-awareness flow",
+      "detail": "Tool self_assess melaporkan keterbatasan arsitektur NOVA secara inline (field 'keterbatasan_diketahui'), TAPI tidak otomatis menyinkronkannya ke catatan gap via self_note_gap. Akibatnya: kalau pengguna menjalankan self_assess dan menanyakan 'apa kekuranganmu', saya bisa menjawab, tapi tidak ada jejak gap resmi yang searchable di self_list_gaps. Pemantauan & penyelesaian gap jadi terpisah dari sumber informasi utamanya.",
+      "suggestion": "Pertimbangkan: (a) tambahkan opsi di self_assess untuk auto-catat setiap keterbatasan sebagai gap open, atau (b) sediakan tool 'sync_arch_limits_to_gaps' yang menyalin field 'keterbatasan_diketahui' ke catatan gap resmi, atau minimal (c) dokumentasikan bahwa keterbatasan di self_assess != gap open, supaya tidak ada misinterpretasi.",
+      "severity": "low",
+      "status": "open",
+      "created_at": "2026-08-11T22:04:22.783Z"
+    }
+  ]
+}

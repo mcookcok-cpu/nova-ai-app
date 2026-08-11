@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget
+    id="com.novacook.webview"
+    version="1.0.1"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>NOVA-AI</name>
+
+    <description>
+        Aplikasi WebView kustom berbasis Cordova
+    </description>
+
+    <author
+        email="support@novacook.local"
+        href="https://novacook.local">
+        NovaCook Team
+    </author>
+
+    <content src="index.html" />
+
+    <icon src="res/icon/logo.svg" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+
+    <access origin="*" />
+
+    <edit-config
+        file="app/src/main/AndroidManifest.xml"
+        mode="merge"
+        target="/manifest/application">
+
+        <application
+            android:usesCleartextTraffic="true" />
+
+    </edit-config>
+
+    <preference
+        name="Fullscreen"
+        value="false" />
+
+    <preference
+        name="Orientation"
+        value="default" />
+
+    <preference
+        name="DisallowOverscroll"
+        value="false" />
+
+    <preference
+        name="WebViewBounce"
+        value="false" />
+
+    <platform name="android">
+        <preference
+            name="StatusBarStyle"
+            value="blacktranslucent" />
+    </platform>
+
+</widget>
