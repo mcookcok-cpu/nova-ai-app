@@ -54,10 +54,11 @@ jobs:
       - name: Add Cordova Android platform
         run: |
           cordova platform add android@12.0.1
+          cordova prepare android
 
       - name: Build Debug APK
         run: |
-          cordova build android --debug
+          cordova build android --debug || (echo "Build failed, checking folder structure..." && ls -R platforms/android && exit 1)
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
